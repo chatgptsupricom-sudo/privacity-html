@@ -9,577 +9,135 @@
       content="Política de Privacidad de SUPRICOM / Office Solutions Center (OSC)."
     />
     <title>Política de Privacidad – SUPRICOM / OSC</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300&family=DM+Sans:wght@300;400;500&display=swap"
-      rel="stylesheet"
-    />
     <style>
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      :root {
-        --ink: #0d1117;
-        --paper: #f8f5ef;
-        --accent: #1a3a5c;
-        --rule: #c8b99a;
-        --muted: #6b6258;
-        --tag-bg: #e8e0d4;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
       body {
-        font-family: "DM Sans", sans-serif;
-        font-weight: 300;
-        background: var(--paper);
-        color: var(--ink);
-        line-height: 1.75;
-        font-size: 16px;
-      }
-
-      header {
-        background: var(--accent);
-        color: #fff;
-        padding: 48px 0 40px;
-        position: relative;
-        overflow: hidden;
-      }
-
-      header::after {
-        content: "";
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        right: 0;
-        height: 32px;
-        background: var(--paper);
-        clip-path: ellipse(55% 100% at 50% 100%);
-      }
-
-      .header-inner {
-        max-width: 780px;
-        margin: 0 auto;
-        padding: 0 24px;
-      }
-
-      .brand {
-        font-family: "Fraunces", serif;
-        font-weight: 700;
-        font-size: clamp(1.8rem, 4vw, 2.6rem);
-        letter-spacing: -0.02em;
-        line-height: 1.1;
-      }
-
-      .brand span {
-        display: block;
-        font-family: "DM Sans", sans-serif;
-        font-weight: 300;
-        font-size: 0.85rem;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        opacity: 0.7;
-        margin-bottom: 6px;
-      }
-
-      .meta-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-top: 20px;
-      }
-
-      .tag {
-        background: rgba(255, 255, 255, 0.15);
-        border: 1px solid rgba(255, 255, 255, 0.25);
-        color: #fff;
-        font-size: 0.72rem;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        padding: 4px 10px;
-        border-radius: 2px;
-      }
-
-      main {
-        max-width: 780px;
-        margin: 0 auto;
-        padding: 56px 24px 80px;
-      }
-
-      .toc {
-        background: var(--tag-bg);
-        border-left: 3px solid var(--accent);
-        padding: 24px 28px;
-        margin-bottom: 56px;
-        border-radius: 0 4px 4px 0;
-      }
-
-      .toc-title {
-        font-family: "Fraunces", serif;
-        font-size: 0.8rem;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        color: var(--muted);
-        margin-bottom: 14px;
-      }
-
-      .toc ol {
-        padding-left: 20px;
-      }
-
-      .toc li {
-        font-size: 0.88rem;
-        line-height: 2;
-      }
-
-      .toc a {
-        color: var(--accent);
-        text-decoration: none;
-        border-bottom: 1px solid transparent;
-        transition: border-color 0.2s;
-      }
-
-      .toc a:hover {
-        border-color: var(--accent);
-      }
-
-      section {
-        margin-bottom: 52px;
-      }
-
-      .section-num {
-        font-family: "Fraunces", serif;
-        font-size: 0.72rem;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: var(--muted);
-        margin-bottom: 6px;
-      }
-
-      h2 {
-        font-family: "Fraunces", serif;
-        font-weight: 600;
-        font-size: clamp(1.15rem, 2.5vw, 1.45rem);
-        color: var(--accent);
-        line-height: 1.2;
-        margin-bottom: 16px;
-        padding-bottom: 12px;
-        border-bottom: 1px solid var(--rule);
-      }
-
-      h3 {
-        font-family: "DM Sans", sans-serif;
-        font-weight: 500;
-        font-size: 0.95rem;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: var(--muted);
-        margin: 24px 0 10px;
-      }
-
-      p {
-        font-size: 0.955rem;
-        margin-bottom: 14px;
-        color: #2a2420;
-      }
-
-      ul,
-      ol {
-        padding-left: 22px;
-        margin-bottom: 14px;
-      }
-
-      li {
-        font-size: 0.955rem;
-        margin-bottom: 7px;
-        color: #2a2420;
-      }
-
-      li strong {
-        font-weight: 500;
-        color: var(--ink);
-      }
-
-      .contact-box {
-        background: var(--accent);
-        color: #fff;
-        padding: 28px 32px;
-        border-radius: 4px;
-        margin-top: 20px;
-      }
-
-      .contact-box p {
-        color: rgba(255, 255, 255, 0.88);
-        margin-bottom: 8px;
-      }
-
-      .contact-box a {
-        color: #a8d0f0;
-        text-decoration: none;
-        border-bottom: 1px solid rgba(168, 208, 240, 0.4);
-      }
-
-      .contact-box a:hover {
-        border-color: #a8d0f0;
-      }
-
-      .note {
+        font-family: Arial, sans-serif;
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+        line-height: 1.6;
+        color: #111;
         background: #fff;
-        border: 1px solid var(--rule);
-        border-left: 3px solid #c0a060;
-        padding: 14px 18px;
-        border-radius: 0 4px 4px 0;
-        font-size: 0.88rem;
-        color: var(--muted);
-        margin: 14px 0;
       }
-
-      footer {
-        background: var(--ink);
-        color: rgba(255, 255, 255, 0.5);
-        text-align: center;
-        padding: 28px 24px;
-        font-size: 0.8rem;
-        letter-spacing: 0.04em;
-      }
-
-      footer strong {
-        color: rgba(255, 255, 255, 0.8);
-      }
-
-      hr.section-rule {
-        border: none;
-        border-top: 1px solid var(--rule);
-        margin: 40px 0;
+      h1,
+      h2 {
+        color: #163a5f;
       }
     </style>
   </head>
   <body>
-    <header>
-      <div class="header-inner">
-        <p class="brand">
-          <span>Política de Privacidad</span>
-          SUPRICOM / Office Solutions Center (OSC)
-        </p>
-        <div class="meta-tags">
-          <span class="tag">Última actualización: 20/03/2026</span>
-          <span class="tag">Meta Platform Policy</span>
-          <span class="tag">URL pública</span>
-        </div>
-      </div>
-    </header>
+    <h1>POLÍTICA DE PRIVACIDAD</h1>
+    <p><strong>SUPRICOM / Office Solutions Center (OSC)</strong></p>
+    <p><strong>Última actualización:</strong> 20/03/2026</p>
 
-    <main>
-      <nav class="toc" aria-label="Tabla de contenido">
-        <p class="toc-title">Contenido</p>
-        <ol>
-          <li><a href="#s1">Identificación del Responsable</a></li>
-          <li><a href="#s2">Disponibilidad de la Política</a></li>
-          <li><a href="#s3">Datos que Recopilamos</a></li>
-          <li><a href="#s4">Finalidad del Tratamiento de los Datos</a></li>
-          <li><a href="#s5">Uso de Datos de la Plataforma Meta</a></li>
-          <li><a href="#s6">Compartición de Datos</a></li>
-          <li><a href="#s7">Conservación de los Datos</a></li>
-          <li><a href="#s8">Derechos del Usuario</a></li>
-          <li><a href="#s9">Solicitud de Eliminación de Datos</a></li>
-          <li><a href="#s10">Seguridad de la Información</a></li>
-          <li>
-            <a href="#s11">Uso de Automatización e Inteligencia Artificial</a>
-          </li>
-          <li><a href="#s12">Cumplimiento con las Políticas de Meta</a></li>
-          <li><a href="#s13">Cambios en la Política</a></li>
-          <li><a href="#s14">Contacto</a></li>
-          <li><a href="#s15">Aceptación</a></li>
-        </ol>
-      </nav>
+    <h2>1. IDENTIFICACIÓN DEL RESPONSABLE</h2>
+    <p>
+      La presente Política de Privacidad regula el tratamiento de datos
+      personales realizado por SUPRICOM / Office Solutions Center (OSC), empresa
+      dedicada a la distribución mayorista de tecnología.
+    </p>
 
-      <section id="s1">
-        <p class="section-num">01</p>
-        <h2>Identificación del Responsable</h2>
-        <p>
-          La presente Política de Privacidad regula el tratamiento de datos
-          personales realizado por:
-        </p>
-        <ul>
-          <li><strong>SUPRICOM / Office Solutions Center (OSC)</strong></li>
-          <li>
-            Empresa dedicada a la distribución mayorista de tecnología (laptops,
-            periféricos, impresoras, tintas y soluciones informáticas).
-          </li>
-        </ul>
-      </section>
+    <h2>2. DISPONIBILIDAD DE LA POLÍTICA</h2>
+    <p>
+      Esta Política de Privacidad se encuentra disponible públicamente a través
+      de una URL accesible sin restricciones, sin bloqueos geográficos y
+      accesible tanto para usuarios como para sistemas automatizados.
+    </p>
 
-      <section id="s2">
-        <p class="section-num">02</p>
-        <h2>Disponibilidad de la Política</h2>
-        <p>
-          Esta Política de Privacidad se encuentra disponible públicamente a
-          través de una URL accesible sin restricciones, sin bloqueos
-          geográficos y accesible tanto para usuarios como para sistemas
-          automatizados (incluyendo rastreadores de plataformas como Meta).
-        </p>
-      </section>
+    <h2>3. DATOS QUE RECOPILAMOS</h2>
+    <p>
+      Podemos recopilar nombre y apellido, nombre de empresa o tienda, RIF u
+      equivalente, número de teléfono, correo electrónico, ubicación comercial,
+      identificador de usuario (PSID de Instagram / Meta), contenido de
+      mensajes, historial de interacción y datos técnicos básicos.
+    </p>
 
-      <section id="s3">
-        <p class="section-num">03</p>
-        <h2>Datos que Recopilamos</h2>
-        <p>
-          A través de nuestras plataformas digitales, incluyendo integraciones
-          con Instagram mediante APIs de Meta, podemos recopilar los siguientes
-          datos:
-        </p>
+    <h2>4. FINALIDAD DEL TRATAMIENTO DE LOS DATOS</h2>
+    <p>
+      Los datos recopilados son tratados para evaluar clientes potenciales
+      mayoristas, gestionar relaciones comerciales B2B, brindar atención
+      automatizada mediante chatbot, enviar información comercial, mejorar
+      procesos de atención y cumplir obligaciones legales aplicables.
+    </p>
 
-        <h3>3.1 Datos proporcionados por el usuario</h3>
-        <ul>
-          <li>Nombre y apellido</li>
-          <li>Nombre de empresa o tienda</li>
-          <li>Número de identificación fiscal (RIF u equivalente)</li>
-          <li>Número de teléfono</li>
-          <li>Dirección de correo electrónico</li>
-          <li>Ubicación comercial</li>
-        </ul>
+    <h2>5. USO DE DATOS DE LA PLATAFORMA META</h2>
+    <p>
+      SUPRICOM / OSC tratará los datos obtenidos a través de las plataformas de
+      Meta exclusivamente de acuerdo con esta Política de Privacidad, las
+      Condiciones de la Plataforma de Meta y las leyes aplicables.
+    </p>
 
-        <h3>
-          3.2 Datos obtenidos automáticamente desde plataformas de terceros
-        </h3>
-        <ul>
-          <li>Identificador de usuario (PSID de Instagram / Meta)</li>
-          <li>Contenido de mensajes enviados a través de nuestros canales</li>
-          <li>Historial de interacción con nuestros sistemas</li>
-          <li>Datos técnicos básicos (dirección IP, dispositivo, navegador)</li>
-        </ul>
-      </section>
+    <h2>6. COMPARTICIÓN DE DATOS</h2>
+    <p>
+      No vendemos, alquilamos ni comercializamos datos personales. Podemos
+      compartir información con proveedores tecnológicos necesarios para la
+      operación, cuando sea requerido por ley o para el cumplimiento de
+      obligaciones contractuales.
+    </p>
 
-      <section id="s4">
-        <p class="section-num">04</p>
-        <h2>Finalidad del Tratamiento de los Datos</h2>
-        <p>
-          Los datos recopilados son tratados exclusivamente para los siguientes
-          fines:
-        </p>
-        <ul>
-          <li>Evaluar y calificar clientes potenciales mayoristas</li>
-          <li>Gestionar relaciones comerciales B2B</li>
-          <li>
-            Brindar atención automatizada y personalizada mediante chatbot
-          </li>
-          <li>
-            Enviar información comercial (cotizaciones, disponibilidad, listas
-            de precios)
-          </li>
-          <li>
-            Mejorar nuestros procesos de atención y experiencia del usuario
-          </li>
-          <li>Cumplir obligaciones legales aplicables</li>
-        </ul>
-      </section>
+    <h2>7. CONSERVACIÓN DE LOS DATOS</h2>
+    <p>
+      Los datos serán conservados únicamente durante el tiempo necesario para
+      cumplir con las finalidades descritas o según lo requerido por
+      obligaciones legales.
+    </p>
 
-      <section id="s5">
-        <p class="section-num">05</p>
-        <h2>Uso de Datos de la Plataforma Meta</h2>
-        <p>
-          SUPRICOM / OSC tratará los datos obtenidos a través de las plataformas
-          de Meta exclusivamente de acuerdo con:
-        </p>
-        <ul>
-          <li>Lo descrito en esta Política de Privacidad</li>
-          <li>Las Condiciones de la Plataforma de Meta</li>
-          <li>Las leyes y regulaciones aplicables</li>
-        </ul>
-        <p>
-          En ningún caso se utilizarán los datos para fines distintos a los aquí
-          establecidos.
-        </p>
-      </section>
+    <h2>8. DERECHOS DEL USUARIO</h2>
+    <p>
+      Los usuarios tienen derecho a acceder a sus datos personales, solicitar
+      rectificación o actualización, solicitar eliminación de sus datos, y
+      limitar u oponerse al tratamiento.
+    </p>
 
-      <section id="s6">
-        <p class="section-num">06</p>
-        <h2>Compartición de Datos</h2>
-        <p>No vendemos, alquilamos ni comercializamos datos personales.</p>
-        <p>Podemos compartir información únicamente en los siguientes casos:</p>
-        <ul>
-          <li>
-            Con proveedores tecnológicos necesarios para la operación (ej:
-            servicios de automatización, hosting, APIs)
-          </li>
-          <li>Cuando sea requerido por ley o autoridad competente</li>
-          <li>Para el cumplimiento de obligaciones contractuales</li>
-        </ul>
-        <p>
-          Todos los terceros están sujetos a obligaciones de confidencialidad.
-        </p>
-      </section>
+    <h2>9. SOLICITUD DE ELIMINACIÓN DE DATOS</h2>
+    <p>
+      Los usuarios pueden solicitar la eliminación de sus datos personales en
+      cualquier momento escribiendo a
+      <a href="mailto:chatgptsupricom@gmail.com">chatgptsupricom@gmail.com</a> o
+      llamando al <a href="tel:+584144021058">+584144021058</a>.
+    </p>
 
-      <section id="s7">
-        <p class="section-num">07</p>
-        <h2>Conservación de los Datos</h2>
-        <p>
-          Los datos serán conservados únicamente durante el tiempo necesario
-          para cumplir con las finalidades descritas o según lo requerido por
-          obligaciones legales.
-        </p>
-      </section>
+    <h2>10. SEGURIDAD DE LA INFORMACIÓN</h2>
+    <p>
+      Implementamos medidas técnicas y organizativas adecuadas para proteger los
+      datos personales contra acceso no autorizado, pérdida, alteración y uso
+      indebido.
+    </p>
 
-      <section id="s8">
-        <p class="section-num">08</p>
-        <h2>Derechos del Usuario</h2>
-        <p>Los usuarios tienen derecho a:</p>
-        <ul>
-          <li>Acceder a sus datos personales</li>
-          <li>Solicitar rectificación o actualización</li>
-          <li>Solicitar eliminación de sus datos</li>
-          <li>Limitar u oponerse al tratamiento</li>
-        </ul>
-      </section>
+    <h2>11. USO DE AUTOMATIZACIÓN E INTELIGENCIA ARTIFICIAL</h2>
+    <p>
+      Nuestros sistemas pueden utilizar herramientas automatizadas para
+      responder consultas, clasificar clientes y procesar información básica.
+      Estas herramientas no sustituyen asesoría humana.
+    </p>
 
-      <section id="s9">
-        <p class="section-num">09</p>
-        <h2>Solicitud de Eliminación de Datos</h2>
-        <p>
-          Los usuarios pueden solicitar la eliminación de sus datos personales
-          en cualquier momento.
-        </p>
-        <h3>Procedimiento</h3>
-        <p>
-          Para solicitar la eliminación de datos, el usuario debe enviar una
-          solicitud a:
-        </p>
-        <div class="contact-box">
-          <p>
-            📧
-            <a href="mailto:chatgptsupricom@gmail.com"
-              >chatgptsupricom@gmail.com</a
-            >
-          </p>
-          <p>📱 <a href="tel:+584144021058">+584144021058</a></p>
-        </div>
-        <p style="margin-top: 18px">La solicitud debe incluir:</p>
-        <ul>
-          <li>Nombre del solicitante</li>
-          <li>Medio de contacto</li>
-          <li>Descripción de la solicitud</li>
-        </ul>
-        <p>
-          La eliminación será procesada en un plazo razonable conforme a la
-          normativa aplicable.
-        </p>
-      </section>
+    <h2>12. CUMPLIMIENTO CON LAS POLÍTICAS DE META</h2>
+    <p>
+      Esta Política de Privacidad no reemplaza ni modifica las políticas de
+      Meta, no entra en conflicto con las condiciones de la plataforma y cumple
+      con los requisitos establecidos para el uso de datos de la plataforma.
+    </p>
 
-      <section id="s10">
-        <p class="section-num">10</p>
-        <h2>Seguridad de la Información</h2>
-        <p>
-          Implementamos medidas técnicas y organizativas adecuadas para proteger
-          los datos personales contra:
-        </p>
-        <ul>
-          <li>Acceso no autorizado</li>
-          <li>Pérdida</li>
-          <li>Alteración</li>
-          <li>Uso indebido</li>
-        </ul>
-      </section>
+    <h2>13. CAMBIOS EN LA POLÍTICA</h2>
+    <p>
+      Nos reservamos el derecho de modificar esta política en cualquier momento.
+      Las actualizaciones serán publicadas en esta misma URL.
+    </p>
 
-      <section id="s11">
-        <p class="section-num">11</p>
-        <h2>Uso de Automatización e Inteligencia Artificial</h2>
-        <p>
-          Nuestros sistemas pueden utilizar herramientas automatizadas (chatbots
-          e inteligencia artificial) para:
-        </p>
-        <ul>
-          <li>Responder consultas</li>
-          <li>Clasificar clientes</li>
-          <li>Procesar información básica</li>
-        </ul>
-        <p>
-          Estas herramientas no toman decisiones legales ni sustituyen asesoría
-          humana.
-        </p>
-      </section>
+    <h2>14. CONTACTO</h2>
+    <p>
+      Correo:
+      <a href="mailto:chatgptsupricom@gmail.com">chatgptsupricom@gmail.com</a>
+    </p>
+    <p>
+      Sitio web: <a href="https://supricom.com.ve/">https://supricom.com.ve/</a>
+    </p>
+    <p>Teléfono: <a href="tel:+584144021058">+584144021058</a></p>
 
-      <section id="s12">
-        <p class="section-num">12</p>
-        <h2>Cumplimiento con las Políticas de Meta</h2>
-        <p>Esta Política de Privacidad:</p>
-        <ul>
-          <li>No reemplaza ni modifica las políticas de Meta</li>
-          <li>No entra en conflicto con las condiciones de la plataforma</li>
-          <li>
-            Cumple con los requisitos establecidos para el uso de datos de la
-            plataforma
-          </li>
-        </ul>
-      </section>
-
-      <section id="s13">
-        <p class="section-num">13</p>
-        <h2>Cambios en la Política</h2>
-        <p>
-          Nos reservamos el derecho de modificar esta política en cualquier
-          momento.
-        </p>
-        <p>Las actualizaciones serán publicadas en esta misma URL.</p>
-      </section>
-
-      <section id="s14">
-        <p class="section-num">14</p>
-        <h2>Contacto</h2>
-        <div class="contact-box">
-          <p>
-            Para cualquier consulta relacionada con esta Política de Privacidad:
-          </p>
-          <p>
-            📧 Correo:
-            <a href="mailto:chatgptsupricom@gmail.com"
-              >chatgptsupricom@gmail.com</a
-            >
-          </p>
-          <p>
-            🌐 Sitio web:
-            <a href="https://supricom.com.ve/" target="_blank" rel="noopener">
-              https://supricom.com.ve/
-            </a>
-          </p>
-          <p>
-            📱 Teléfono:
-            <a href="tel:+584144021058">+584144021058</a>
-          </p>
-        </div>
-      </section>
-
-      <section id="s15">
-        <p class="section-num">15</p>
-        <h2>Aceptación</h2>
-        <p>
-          Al interactuar con nuestros servicios, incluyendo nuestro chatbot en
-          Instagram, el usuario acepta esta Política de Privacidad.
-        </p>
-        <div class="note">
-          <strong>SUPRICOM / Office Solutions Center (OSC)</strong><br />
-          Tu Mayorista de Confianza
-        </div>
-      </section>
-
-      <hr class="section-rule" />
-      <p style="font-size: 0.82rem; color: var(--muted); text-align: center">
-        Última actualización: 20/03/2026
-      </p>
-    </main>
-
-    <footer>
-      <p>
-        <strong>SUPRICOM / Office Solutions Center (OSC)</strong>
-        &nbsp;·&nbsp; Política de Privacidad
-      </p>
-    </footer>
+    <h2>15. ACEPTACIÓN</h2>
+    <p>
+      Al interactuar con nuestros servicios, incluyendo nuestro chatbot en
+      Instagram, el usuario acepta esta Política de Privacidad.
+    </p>
   </body>
 </html>
